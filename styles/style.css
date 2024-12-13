@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", serif;
+}
+.card-container{
+   display: grid;
+   grid-template-columns: 1fr;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.content {
+  max-width: 350px;
+  padding: 45px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.content-1{
+  background-color: #E28525;
+}
+.content-2{
+ background-color: #016972;
+}
+.content-3{
+ background-color: #00403F;
+}
+.content-1 .card-btn{
+  color: #E28525;
+}
+.content-2 .card-btn{
+   color: #016972;
+}
+.content-3 .card-btn{
+   color: #00403F;
+}
+.card-title{
+  color: #DEFEFF;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.2rem;
+   margin-top: 1.4rem;
+}
+.card-pera{
+  color: #defeffd2;
+   margin: 1.7rem 0;
+  font-weight: 300;
+  width: 95%;
+  line-height: 2rem;
+  
+}
+.content-3 p{
+  width: 96%;
+  padding-right: 1rem;
+ }
+.card-btn{
+  width: 170px;
+  height: 45px;
+  border-radius: 25px;
+  border: 0;
+  font-weight: 500;
+  transition: all .5s ease;
+}
+.card-btn:hover{
+  background-color: transparent ;
+  border: 1px solid white;
+  color: white;
+}
+@media screen  and (min-width: 578px) {
+    .card-container{
+      grid-template-columns: repeat(3,1fr);
+      margin: 200px auto;
+      
+    }
+  
+        .content {
+          max-width: 100%;
+          height: 100%;
+          
+        }
+    
+    .card-pera{
+       color: #defeffd2;
+       margin-top: 1.3rem;
+       margin-bottom: 6rem;
+       font-weight: 300;
+       font-size: 16.4px;
+    }
+  }
